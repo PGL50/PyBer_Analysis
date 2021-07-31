@@ -60,7 +60,7 @@ weekly_fares_df = fares_Jan_Apr.resample('W').sum()
 
 - Same chart with lines labeled directly and no legend for better readability
 
-![summary line chart](./analysis/Pyber_fare_summary_new.png)
+![summary line chart new](./analysis/Pyber_fare_summary_new.png)
 
 ### Extra analyses
 

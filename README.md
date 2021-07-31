@@ -54,9 +54,9 @@ fares_Jan_Apr = fares_by_date_pivot.loc['2019-01-01':'2019-04-29']
 ```python
 weekly_fares_df = fares_Jan_Apr.resample('W').sum()
 ```
-- Line chart of the week fares per week by city type
+- Line chart of the weekly fare totals per week by city type
 
-![summary table](./analysis/Pyber_fare_summary_df.png)
+![summary table](./analysis/Pyber_fare_summary.png)
 
 
 

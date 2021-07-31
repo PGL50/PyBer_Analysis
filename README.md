@@ -56,10 +56,10 @@ weekly_fares_df = fares_Jan_Apr.resample('W').sum()
 ```
 - Line chart of the weekly fare totals per week by city type
 
-![summary table](./analysis/Pyber_fare_summary.png)
+![summary line chart](./analysis/Pyber_fare_summary.png)
 
 - Same chart with lines labeled directly and no legend for better readability
 
-![summary table](./analysis/Pyber_fare_summary_new.png)
+![summary line chart](./analysis/Pyber_fare_summary_new.png)
 
 

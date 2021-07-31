@@ -77,11 +77,12 @@ weekly_fares_df = fares_Jan_Apr.resample('W').sum()
 ## Results Summary
 1. Based on the time series line chart, it is clear that Urban cities make the most money in total fares. Urban cities have 5 to 30 times the total fares compared to Rural Cities. Total fares for Urban compared to Suburban range from 2 to 3 times higher over time. Urban cities have peak fares in late Feb and early March. Suburban fares also have a peak in late Feb. Rural fares have a peak in early April but also have the lowest weekly fares over time. 
 ` `  
-1. The extra analysis shown in graph 1 shows a very strong portion of the PyBer business is in Urban cities. There are 13 times more rides in Urban cities compared to Rural ones. The number of Urban rides are almost 3 times higher than in suburban cities. This makes sense because of sheer volume of potential riders. 
+1. The extra analysis shown in bar graph 1 shows a very strong portion of the PyBer business is in Urban cities. There are 13 times more rides in Urban cities compared to Rural ones. The number of Urban rides are almost 3 times higher than in suburban cities. This makes sense because of sheer volume of potential riders. 
 1. Bar chart 2 shows a very large difference in the number of drivers by city type. There are more than 30 times the number of drivers in Urban cities compared to Rural (5 times as many suburban drivers).
 1. Bar chart 3 illustrates the differences in total fares by city type. Urban cities collect twice and much fare revenue as Suburban cities and 9 times as much as Rural cities.
 ` `  
-1. Extra graphs 4 and 5 show an opposite relationship than total rides, fares and drivers. Rural cities have the highest fare per ride and fare per driver. Suburban cities rank second in these charts. 
+1. Extra graph 4 shows an opposite relationship than total rides, fares and drivers. Rural cities have the highest fare per ride (1.4 times highr that Urban). Suburban cities rank second in this chart (1.3 times higher than Urban). 
+1. Extra graph 5 also shows that Rural cities rank the highest in average fare per driver (3.3 times higher than Urban cities). Suburban cities rank second in this charts (2.4 times higher than Urban cities). 
 
 ## Recomendations
 1. PyBer needs to run more promotions in Jan and early Feb to boost the number of riders during those lower fare weeks. 

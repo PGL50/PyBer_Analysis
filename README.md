@@ -66,9 +66,11 @@ weekly_fares_df = fares_Jan_Apr.resample('W').sum()
 
 1. Total Rides by City Type
 ![Total Rides](./analysis/PyBer_fare_summary_rides.png)
-1. Total Rides by City Type
+1. Total Drivers by City Type
 ![Total Drivers](./analysis/PyBer_fare_summary_drivers.png)
 1. Total Fares by City Type
 ![Total Fares](./analysis/PyBer_fare_summary_fares.png)
-1. Total Fares by City Type
-![Total Fares](./analysis/PyBer_fare_summary_fares.png)
+1. Average Fares/Ride by City Type
+![Average Fares/Ride](./analysis/PyBer_fare_summary_farespercity.png)
+1. Average Fares/Driver by City Type
+![Average Fares/Driver](./analysis/PyBer_fare_summary_faresperdriver.png)

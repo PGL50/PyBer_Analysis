@@ -62,4 +62,13 @@ weekly_fares_df = fares_Jan_Apr.resample('W').sum()
 
 ![summary line chart](./analysis/Pyber_fare_summary_new.png)
 
+### Extra analyses
 
+1. Total Rides by City Type
+![Total Rides](./analysis/PyBer_fare_summary_rides.png)
+1. Total Rides by City Type
+![Total Drivers](./analysis/PyBer_fare_summary_drivers.png)
+1. Total Fares by City Type
+![Total Fares](./analysis/PyBer_fare_summary_fares.png)
+1. Total Fares by City Type
+![Total Fares](./analysis/PyBer_fare_summary_fares.png)

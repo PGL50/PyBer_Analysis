@@ -3,8 +3,8 @@
 ## Overview of the PyBer City Type Analysis
 
 ### PyBer ride sharing app company wants an analysis of their data by city type (Urban, Suburbam or Rural). Company leaders want a summary of the differences by the city type and some recommendations based on the differences. The results are presented in graphic and tabular form.
-
-### Deliverable 1: Code analysis and output
+`  ` 
+## Deliverable 1: Code analysis and output
 - Total rides for each city type
 ```python
 ride_count = pyber_data_df.groupby("type").count()["ride_id"]
@@ -32,9 +32,9 @@ fare_per_driver = total_fare / driver_count
 ### PyBer Summary DataFrame-Unformatted
 ![summary table](./Resources/pyber_summary_df_unformatted.png) 
 ### PyBer Summary DataFrame-Formatted
-![summary table](./Resources/pyber_summary_df.png) 
+![summary table new](./Resources/pyber_summary_df.png) 
 
-### Deliverable 2: Code analysis and output
+## Deliverable 2: Code analysis and output
 
 - DataFrame using groupby() on type and date summing the fares, resetting index, and changing date to datetime
 ```python 
@@ -62,7 +62,7 @@ weekly_fares_df = fares_Jan_Apr.resample('W').sum()
 
 ![summary line chart new](./analysis/Pyber_fare_summary_new.png)
 
-### Extra analyses
+## Extra analyses
 
 1. Total Rides by City Type
 ![Total Rides](./analysis/PyBer_fare_summary_rides.png)
@@ -74,3 +74,13 @@ weekly_fares_df = fares_Jan_Apr.resample('W').sum()
 ![Average Fares/Ride](./analysis/PyBer_fare_summary_farespercity.png)
 1. Average Fares/Driver by City Type
 ![Average Fares/Driver](./analysis/PyBer_fare_summary_faresperdriver.png)
+
+## Summary
+1. Based on the time series line chart, it is clear that Urban cities make the most money in total fares. Urban cities have 5 to 30 times the total fares compared to Rural Cities. Total fares for Urban compared to Suburban range from 2 to 3 times higher over time. Urban cities have peak fares in late Feb and early March. Suburban fares also have a peak in late Feb. Rural fares have a peak in early April but also have the lowest weekly fares over time. One recommendation would be for more promotions in Jan and early Feb to boost the number of riders during those lower fare weeks. This same time series analysis needs to be run for the rest of the year to look for other seasonal trends.
+` `  
+1. The extra analysis shown in graph 1 shows a very strong portion of the PyBer business is in Urban cities. There are 13 times more rides in Urban cities compared to Rural ones. The number of Urban rides are almost 3 times higher than in suburban cities. This makes sense because of sheer volume of potential riders. Rural populations tend to be older so campaigns may be developed to show the advantages of using PyBer (increased freedom and independence, not relying on others for rides).
+1. Bar chart 2 shows a very large difference in the number of drivers by city type. There are more than 30 times the number of drivers in Urban cities compared to Rural (5 times as many suburban drivers).PyBer needs to do some recruiting of drivers in the Suburban and Rural cities. They need to look at the cost benefit of giving drivers more money in Rural and Suburban areas to attract more drivers.
+1. Rural populations tend to be older so campaigns may be developed to show the advantages of using PyBer (increased freedom and independence, not relying on others for rides).
+` `  
+1. Extra graphs 4 and 5 show an opposite relationship. Rural cities have the highest fare per ride and fare per driver. Suburban cities rank second in these charts. To increase revenue, PyBer could consider raising fares in Urban cities. This may be difficult with increased competition.
+1. The suburban market show a lot of potential money for PyBer. The average fare per ride is fairly close to the Urban value. There is a lot of convenience associated with ride share apps. 

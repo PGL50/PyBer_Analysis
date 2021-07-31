@@ -56,11 +56,11 @@ weekly_fares_df = fares_Jan_Apr.resample('W').sum()
 ```
 - Line chart of the weekly fare totals per week by city type
 
-![summary line chart](./analysis/Pyber_fare_summary.png)
+
 
 - Same chart with lines labeled directly and no legend for better readability
 
-![summary line chart new](./analysis/Pyber_fare_summary_new.png)
+
 
 ## Extra analyses
 
@@ -75,7 +75,7 @@ weekly_fares_df = fares_Jan_Apr.resample('W').sum()
 1. Average Fares/Driver by City Type
 ![Average Fares/Driver](./analysis/PyBer_fare_summary_faresperdriver.png)
 
-## Summary
+## Results Summary
 1. Based on the time series line chart, it is clear that Urban cities make the most money in total fares. Urban cities have 5 to 30 times the total fares compared to Rural Cities. Total fares for Urban compared to Suburban range from 2 to 3 times higher over time. Urban cities have peak fares in late Feb and early March. Suburban fares also have a peak in late Feb. Rural fares have a peak in early April but also have the lowest weekly fares over time. One recommendation would be for more promotions in Jan and early Feb to boost the number of riders during those lower fare weeks. This same time series analysis needs to be run for the rest of the year to look for other seasonal trends.
 ` `  
 1. The extra analysis shown in graph 1 shows a very strong portion of the PyBer business is in Urban cities. There are 13 times more rides in Urban cities compared to Rural ones. The number of Urban rides are almost 3 times higher than in suburban cities. This makes sense because of sheer volume of potential riders. Rural populations tend to be older so campaigns may be developed to show the advantages of using PyBer (increased freedom and independence, not relying on others for rides).

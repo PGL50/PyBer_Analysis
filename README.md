@@ -38,7 +38,8 @@ fare_per_driver = total_fare / driver_count
 ### PyBer Summary DataFrame-Formatted
 ![summary table new](./Resources/pyber_summary_df.png) 
 
-## Deliverable 2: Code analysis and output
+## Deliverable 2: Code analysis and output 
+### (output of all the DataFrames are contained in the Jupyter notebook output)
 
 - DataFrame using groupby() on type and date summing the fares, resetting index, and changing date to datetime
 ```python 

@@ -9,25 +9,29 @@
 ```python
 ride_count = pyber_data_df.groupby("type").count()["ride_id"]
 ```
+![Total Rides](./Resources/Rides.png) 
 - Total driver for each city type
 #### This code had take into account that the total sum of drivers by type would over count the number of drivers. Cities were listed more than once for mulitple ride_id's. So the total drivers per type had to only count each city's drivers once. I used a new method, drop_duplicates(), to do that unique sum.
 ```python
 # https://stackoverflow.com/questions/56220045 how-to-sum-distinct-rows-in-a-pandas-dataframe
 driver_count = pyber_data_df.drop_duplicates(["city","type"]).groupby(["type"]).sum()["driver_count"]
 ```
+![Total Drivers](./Resources/Drivers.png) 
 - Total fares for each city type
 ```python
 total_fare = pyber_data_df.groupby("type").sum()["fare"]
 ```
+![Total Fares](./Resources/Fares.png) 
 - Average fares per ride for each city type
 ```python
 fare_per_ride = total_fare / ride_count
 ```
+![Fare per Ride](./Resources/FarePerRide.png) 
 - Average fares per driver for each city type
 ```python
 fare_per_driver = total_fare / driver_count
 ```
-
+![Fare per Driver](./Resources/FarePerDriver.png) 
 
 ### PyBer Summary DataFrame-Unformatted
 ![summary table](./Resources/pyber_summary_df_unformatted.png) 
@@ -81,8 +85,8 @@ weekly_fares_df = fares_Jan_Apr.resample('W').sum()
 1. Bar chart 2 shows a very large difference in the number of drivers by city type. There are more than 30 times the number of drivers in Urban cities compared to Rural (5 times as many suburban drivers).
 1. Bar chart 3 illustrates the differences in total fares by city type. Urban cities collect twice and much fare revenue as Suburban cities and 9 times as much as Rural cities.
 ` `  
-1. Extra graph 4 shows an opposite relationship than total rides, fares and drivers. Rural cities have the highest fare per ride (1.4 times highr that Urban). Suburban cities rank second in this chart (1.3 times higher than Urban). 
-1. Extra graph 5 also shows that Rural cities rank the highest in average fare per driver (3.3 times higher than Urban cities). Suburban cities rank second in this charts (2.4 times higher than Urban cities). 
+1. Bar graph 4 shows an opposite relationship than total rides, fares and drivers. Rural cities have the highest fare per ride (1.4 times highr that Urban). Suburban cities rank second in this chart (1.3 times higher than Urban). 
+1. Bar graph 5 also shows that Rural cities rank the highest in average fare per driver (3.3 times higher than Urban cities). Suburban cities rank second in this charts (2.4 times higher than Urban cities). 
 
 ## Recomendations
 1. PyBer needs to run more promotions in Jan and early Feb to boost the number of riders during those lower fare weeks. 
